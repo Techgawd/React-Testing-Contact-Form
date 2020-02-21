@@ -20,3 +20,8 @@ test("renders submit form header", () => {
   expect(header).toBeInTheDocument();
 
 })
+
+test("short render header", () => {
+  const { getByText } = render(<App />);
+  getByText(/submit form/i);
+});

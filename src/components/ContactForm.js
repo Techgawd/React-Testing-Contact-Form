@@ -14,7 +14,7 @@ const ContactForm = () => {
     <div className="App">
       <form onSubmit={handleSubmit(onSubmit)}>
         <div>
-          <label htmlFor="firstName">First Name*</label>
+          <label data-testid='nameOfYourChoice' htmlFor="firstName">First Name</label>
           <input
             name="firstName"
             placeholder="bill"
